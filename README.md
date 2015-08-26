@@ -16,5 +16,14 @@ $ vagrant plugin install vagrant-vbox-snapshot
 このリポジトリを clone して、`vagrant up` を実行してください。
 ```sh
 git clone git@github.com:fabnavi/fabnavi5-dev.git
+cd fabnavi5-dev
 vagrant up
+```
+
+fabnavi5 をリポジトリからダウンロードしてください。
+```sh
+cd data/
+git clone git@github.com:fabnavi/fabnavi5.git .
+cd fabnavi5/
+bundle install
 ```
