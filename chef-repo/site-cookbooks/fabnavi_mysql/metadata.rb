@@ -1,0 +1,8 @@
+name             'fabnavi_mysql'
+maintainer       'YOUR_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures fabnavi_mysql'
+long_description 'Installs/Configures fabnavi_mysql'
+version          '0.1.0'
+depends 'mysql', '~> 6.0'

@@ -1,0 +1,11 @@
+{
+  "name" : "dev",
+  "description" : "Dev machine role.",
+  "run_list" : [
+    "recipe[git]",
+    "recipe[zsh]",
+    "recipe[fabnavi_zsh]",
+    "recipe[vim]",
+    "recipe[tmux]"
+  ]
+}

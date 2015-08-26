@@ -1,0 +1,29 @@
+{
+  "name" : "app",
+  "description" : "App server role.",
+  "run_list" : [
+    "recipe[ruby_build]",
+    "recipe[rbenv::user]",
+    "recipe[ntp]",
+    "recipe[timezone-ii]",
+    "recipe[libmysqlclient]"
+  ],
+  "default_attributes" : {
+    "ntp" : {
+      "servers" : ["ntp.nict.jp", "ntp.jst.mfeed.ad.jp"]
+    },
+    "tz" : "Asia/Tokyo",
+    "rbenv" : {
+      "user_installs" : [
+        {
+          "user" : "vagrant",
+          "rubies" : ["2.2.3"],
+          "global" : "2.2.3",
+          "gems" : {
+            "2.2.3" : [{"name" : "bundler"}]
+          }
+        }
+      ]
+    }
+  }
+}

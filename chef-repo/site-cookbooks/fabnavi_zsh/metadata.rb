@@ -1,0 +1,7 @@
+name             'fabnavi_zsh'
+maintainer       'YOUR_NAME'
+maintainer_email 'YOUR_EMAIL'
+license          'All rights reserved'
+description      'Installs/Configures fabnavi_zsh'
+long_description 'Installs/Configures fabnavi_zsh'
+version          '0.1.0'

@@ -1,0 +1,30 @@
+{
+  "name": "libmysqlclient",
+  "version": "0.1.0",
+  "description": "Installs/Configures libmysqlclient-cookbook",
+  "long_description": "Installs/Configures libmysqlclient-cookbook",
+  "maintainer": "Mike Splain",
+  "maintainer_email": "mike.splain@gmail.com",
+  "license": "Apache v2.0",
+  "platforms": {
+  },
+  "dependencies": {
+    "apt": ">= 0.0.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+  }
+}

@@ -1,0 +1,32 @@
+---
+driver:
+  name: vagrant
+
+platforms:
+- name: ubuntu-12.04
+  run_list:
+  - recipe[apt]
+- name: ubuntu-14.04
+  run_list:
+  - recipe[apt]
+- name: centos-6.5
+- name: centos-7.0
+
+suites:
+- name: system_ruby
+  run_list:
+  - recipe[ruby_build]
+  - recipe[rbenv::system]
+  attributes:
+    rbenv:
+      plugins:
+      - name: rbenv-vars
+        git_url: https://github.com/sstephenson/rbenv-vars.git
+      rubies:
+      - name: 2.1.6
+        environment:
+          CONFIGURE_OPTS: --disable-install-rdoc
+      - name: 2.2.2
+        environment:
+          CONFIGURE_OPTS: --disable-install-rdoc
+      global: 2.1.6

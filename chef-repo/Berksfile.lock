@@ -1,0 +1,64 @@
+DEPENDENCIES
+  git
+  libmysqlclient
+  mysql (= 6.1.0)
+  nginx (= 2.7.6)
+  ntp
+  rbenv
+    git: git://github.com/fnichol/chef-rbenv.git
+    revision: 6fe8c27c39b570e4a42655b901a614c50948b554
+  ruby_build
+  timezone-ii
+  tmux
+  vim
+  zsh
+
+GRAPH
+  apt (2.8.2)
+  bluepill (2.3.1)
+    rsyslog (>= 0.0.0)
+  build-essential (2.2.3)
+  chef_handler (1.2.0)
+  dmg (2.2.2)
+  git (4.3.3)
+    build-essential (>= 0.0.0)
+    dmg (>= 0.0.0)
+    windows (>= 0.0.0)
+    yum-epel (>= 0.0.0)
+  java (1.35.0)
+  libmysqlclient (0.1.0)
+    apt (>= 0.0.0)
+  mysql (6.1.0)
+    smf (>= 0.0.0)
+    yum-mysql-community (>= 0.0.0)
+  nginx (2.7.6)
+    apt (~> 2.2)
+    bluepill (~> 2.3)
+    build-essential (~> 2.0)
+    ohai (~> 2.0)
+    runit (~> 1.2)
+    yum-epel (~> 0.3)
+  ntp (1.8.6)
+  ohai (2.0.1)
+  packagecloud (0.0.19)
+  rbac (1.0.3)
+  rbenv (0.8.0)
+    java (> 1.4.0)
+    ruby_build (>= 0.0.0)
+  rsyslog (2.1.0)
+  ruby_build (0.8.0)
+  runit (1.7.2)
+    packagecloud (>= 0.0.0)
+  smf (2.2.7)
+    rbac (>= 1.0.1)
+  timezone-ii (0.2.0)
+  tmux (1.4.0)
+  vim (1.1.2)
+  windows (1.38.1)
+    chef_handler (>= 0.0.0)
+  yum (3.6.3)
+  yum-epel (0.6.2)
+    yum (~> 3.2)
+  yum-mysql-community (0.1.17)
+    yum (>= 3.0)
+  zsh (1.0.1)
