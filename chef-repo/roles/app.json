@@ -2,6 +2,7 @@
   "name" : "app",
   "description" : "App server role.",
   "run_list" : [
+    "recipe[git]",
     "recipe[ruby_build]",
     "recipe[rbenv::user]",
     "recipe[ntp]",

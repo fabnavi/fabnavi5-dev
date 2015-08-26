@@ -1,0 +1,43 @@
+{
+  "name": "graphviz",
+  "description": "Installs/Configures graphviz",
+  "long_description": "graphviz Cookbook\n=================\nChef cookbook for graphviz package\n\nRequirements\n------------\n#### operating systems\nTested on:\n* Ubuntu 14.04\n* CentOS 6.5\n\nAttributes\n----------\n\nUsage\n-----\n#### graphviz::default\nJust include `graphviz` in your node's `run_list`:\n\n```json\n{\n  \"name\":\"my_node\",\n  \"run_list\": [\n    \"recipe[graphviz]\"\n  ]\n}\n```\n\nContributing\n------------\n1. Fork the repository on Github\n2. Create a named feature branch (like `add_component_x`)\n3. Write your change\n4. Write tests for your change (if applicable)\n5. Run the tests, ensuring they all pass\n6. Submit a Pull Request using Github\n\nLicense and Authors\n-------------------\nAuthors: Takuma J Miyake\n",
+  "maintainer": "Takuma J Miyake",
+  "maintainer_email": "j.e.miyake@gmail.com",
+  "license": "MIT",
+  "platforms": {
+    "fedora": ">= 0.0.0",
+    "centos": ">= 0.0.0",
+    "rhel": ">= 0.0.0",
+    "ubuntu": ">= 0.0.0",
+    "debian": ">= 0.0.0"
+  },
+  "dependencies": {
+
+  },
+  "recommendations": {
+
+  },
+  "suggestions": {
+
+  },
+  "conflicting": {
+
+  },
+  "providing": {
+
+  },
+  "replacing": {
+
+  },
+  "attributes": {
+
+  },
+  "groupings": {
+
+  },
+  "recipes": {
+    "graphviz": "Installs graphviz package"
+  },
+  "version": "0.1.1"
+}
