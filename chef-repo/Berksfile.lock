@@ -4,6 +4,7 @@ DEPENDENCIES
   libmysqlclient
   mysql (= 6.1.0)
   nginx (= 2.7.6)
+  nodejs
   ntp
   rbenv
     git: git://github.com/fnichol/chef-rbenv.git
@@ -15,7 +16,12 @@ DEPENDENCIES
   zsh
 
 GRAPH
+  7-zip (1.0.2)
+    windows (>= 1.2.2)
   apt (2.8.2)
+  ark (0.9.0)
+    7-zip (>= 0.0.0)
+    windows (>= 0.0.0)
   bluepill (2.3.1)
     rsyslog (>= 0.0.0)
   build-essential (2.2.3)
@@ -27,6 +33,8 @@ GRAPH
     windows (>= 0.0.0)
     yum-epel (>= 0.0.0)
   graphviz (0.1.1)
+  homebrew (1.13.0)
+    build-essential (>= 2.1.2)
   java (1.35.0)
   libmysqlclient (0.1.0)
     apt (>= 0.0.0)
@@ -40,6 +48,12 @@ GRAPH
     ohai (~> 2.0)
     runit (~> 1.2)
     yum-epel (~> 0.3)
+  nodejs (2.4.2)
+    apt (>= 0.0.0)
+    ark (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    homebrew (>= 0.0.0)
+    yum-epel (>= 0.0.0)
   ntp (1.8.6)
   ohai (2.0.1)
   packagecloud (0.0.19)

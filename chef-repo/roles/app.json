@@ -5,6 +5,7 @@
     "recipe[git]",
     "recipe[ruby_build]",
     "recipe[rbenv::user]",
+    "recipe[nodejs]",
     "recipe[ntp]",
     "recipe[timezone-ii]",
     "recipe[libmysqlclient]"
