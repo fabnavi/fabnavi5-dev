@@ -26,4 +26,5 @@ $ cd data/
 $ git clone git@github.com:fabnavi/fabnavi5.git .
 $ cd fabnavi5/
 $ bundle install
+$ npm install
 ```
