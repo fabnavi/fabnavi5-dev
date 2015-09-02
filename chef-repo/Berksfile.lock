@@ -1,6 +1,7 @@
 DEPENDENCIES
   git
   graphviz
+  imagemagick
   libmysqlclient
   mysql (= 6.1.0)
   nginx (= 2.7.6)
@@ -27,6 +28,7 @@ GRAPH
     windows (>= 0.0.0)
     yum-epel (>= 0.0.0)
   graphviz (0.1.1)
+  imagemagick (0.2.3)
   java (1.35.0)
   libmysqlclient (0.1.0)
     apt (>= 0.0.0)
