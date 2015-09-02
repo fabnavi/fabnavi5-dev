@@ -8,7 +8,8 @@
     "recipe[nodebrew]",
     "recipe[ntp]",
     "recipe[timezone-ii]",
-    "recipe[libmysqlclient]"
+    "recipe[libmysqlclient]",
+    "recipe[imagemagick]"
   ],
   "default_attributes" : {
     "ntp" : {
