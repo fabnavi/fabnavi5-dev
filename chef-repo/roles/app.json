@@ -5,6 +5,7 @@
     "recipe[git]",
     "recipe[ruby_build]",
     "recipe[rbenv::user]",
+    "recipe[nodebrew]",
     "recipe[ntp]",
     "recipe[timezone-ii]",
     "recipe[libmysqlclient]",
@@ -26,6 +27,15 @@
           }
         }
       ]
+    },
+    "nodebrew" : {
+      "nodes" : [ 
+        { "version" : "0.12.6" }
+      ],
+      "use" : "0.12.6",
+      "npm" : {
+        "0.12.6" : []
+      }
     }
   }
 }

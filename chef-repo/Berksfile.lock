@@ -5,6 +5,7 @@ DEPENDENCIES
   libmysqlclient
   mysql (= 6.1.0)
   nginx (= 2.7.6)
+  nodebrew
   ntp
   rbenv
     git: git://github.com/fnichol/chef-rbenv.git
@@ -42,6 +43,10 @@ GRAPH
     ohai (~> 2.0)
     runit (~> 1.2)
     yum-epel (~> 0.3)
+  nodebrew (0.1.0)
+    apt (>= 0.0.0)
+    build-essential (>= 0.0.0)
+    git (>= 0.0.0)
   ntp (1.8.6)
   ohai (2.0.1)
   packagecloud (0.0.19)
