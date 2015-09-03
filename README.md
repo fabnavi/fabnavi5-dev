@@ -24,7 +24,18 @@ fabnavi5 をリポジトリからダウンロードしてください。
 ```sh
 $ cd data/
 $ git clone git@github.com:fabnavi/fabnavi5.git .
-$ cd fabnavi5/
+```
+
+fabnavi5 をセットアップしてください。
+```sh
+$ vagrant ssh
+$ cd fabnavi5
 $ bundle install
 $ npm install
+$ rake db:setup
+$ rails s -b 0.0.0.0
 ```
+
+FirefoxなどのWebプラウザを立ち上げて
+``` http://192.168.33.10:3000 ```
+にアクセスしてください
