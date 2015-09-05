@@ -17,6 +17,7 @@ $ vagrant plugin install vagrant-vbox-snapshot
 ```sh
 $ git clone https://github.com/fabnavi/fabnavi5-dev.git
 $ cd fabnavi5-dev
+$ mkdir data
 $ vagrant up
 ```
 
