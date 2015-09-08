@@ -8,6 +8,7 @@ Vagrant.configure(2) do |config|
   config.omnibus.chef_version = :latest
 
   config.vm.network "private_network", ip: "192.168.33.10"
+  config.vm.network "forwarded_port", guest: 35729, host: 35729
   config.vm.synced_folder "./data", "/home/vagrant/fabnavi5", nfs: true
 
   config.vm.provider "virtualbox" do |vb|
