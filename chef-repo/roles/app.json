@@ -9,7 +9,8 @@
     "recipe[ntp]",
     "recipe[timezone-ii]",
     "recipe[libmysqlclient]",
-    "recipe[imagemagick]"
+    "recipe[imagemagick]",
+    "recipe[nginx]"
   ],
   "default_attributes" : {
     "ntp" : {
@@ -29,7 +30,7 @@
       ]
     },
     "nodebrew" : {
-      "nodes" : [ 
+      "nodes" : [
         { "version" : "0.12.6" }
       ],
       "use" : "0.12.6",
