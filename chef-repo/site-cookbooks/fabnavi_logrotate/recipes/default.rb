@@ -1,4 +1,5 @@
 logrotate_app 'fabnavi5-rails-app' do
+  su 'deploy'
   cookbook  'logrotate'
   path      '/var/www/fabnavi5/shared/log/*.log'
   options   ['missingok', 'delaycompress', 'notifempty']
