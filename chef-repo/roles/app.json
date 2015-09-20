@@ -5,14 +5,14 @@
     "recipe[git]",
     "recipe[ruby_build]",
     "recipe[rbenv::user]",
-    "recipe[nodebrew]",
     "recipe[ntp]",
     "recipe[timezone-ii]",
     "recipe[libmysqlclient]",
     "recipe[imagemagick]",
     "recipe[nginx]",
     "recipe[fabnavi_nginx]",
-    "recipe[rails_project]"
+    "recipe[rails_project]",
+    "recipe[fabnavi_logrotate]"
   ],
   "default_attributes" : {
     "ntp" : {
