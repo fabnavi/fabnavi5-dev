@@ -3,6 +3,7 @@ DEPENDENCIES
   graphviz
   imagemagick
   libmysqlclient
+  logrotate
   mysql (= 6.1.0)
   nginx (= 2.7.6)
   nodebrew
@@ -33,6 +34,7 @@ GRAPH
   java (1.35.0)
   libmysqlclient (0.1.0)
     apt (>= 0.0.0)
+  logrotate (1.9.2)
   mysql (6.1.0)
     smf (>= 0.0.0)
     yum-mysql-community (>= 0.0.0)
