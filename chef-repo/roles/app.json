@@ -10,7 +10,9 @@
     "recipe[timezone-ii]",
     "recipe[libmysqlclient]",
     "recipe[imagemagick]",
-    "recipe[nginx]"
+    "recipe[nginx]",
+    "recipe[fabnavi_nginx]",
+    "recipe[rails_project]"
   ],
   "default_attributes" : {
     "ntp" : {
