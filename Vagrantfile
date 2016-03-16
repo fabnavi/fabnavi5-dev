@@ -19,7 +19,6 @@ Vagrant.configure(2) do |config|
   config.vm.provision "chef_zero" do |chef|
     chef.cookbooks_path = ["./chef-repo/cookbooks", "./chef-repo/site-cookbooks"]
     chef.roles_path = "chef-repo/roles"
-    chef.add_role "app"
     chef.add_role "db"
     chef.add_role "dev"
   end

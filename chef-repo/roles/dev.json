@@ -2,10 +2,43 @@
   "name" : "dev",
   "description" : "Dev machine role.",
   "run_list" : [
+    "recipe[git]",
+    "recipe[ruby_build]",
+    "recipe[rbenv::user]",
+    "recipe[nodebrew]",
+    "recipe[libmysqlclient]",
+    "recipe[imagemagick]",
     "recipe[zsh]",
     "recipe[fabnavi_zsh]",
     "recipe[vim]",
     "recipe[tmux]",
     "recipe[graphviz]"
-  ]
+  ],
+  "default_attributes" : {
+    "ntp" : {
+      "servers" : ["ntp.nict.jp", "ntp.jst.mfeed.ad.jp"]
+    },
+    "tz" : "Asia/Tokyo",
+    "rbenv" : {
+      "user_installs" : [
+        {
+          "user" : "vagrant",
+          "rubies" : ["2.2.3"],
+          "global" : "2.2.3",
+          "gems" : {
+            "2.2.3" : [{"name" : "bundler"}]
+          }
+        }
+      ]
+    },
+    "nodebrew" : {
+      "nodes" : [
+        { "version" : "0.12.6" }
+      ],
+      "use" : "0.12.6",
+      "npm" : {
+        "0.12.6" : []
+      }
+    }
+  }
 }
