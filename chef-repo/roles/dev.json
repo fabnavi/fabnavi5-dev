@@ -33,7 +33,7 @@
     },
     "nodebrew" : {
       "nodes" : [
-        { "version" : "0.12.6" }
+        { "version" : "0.12.6", "binary": true }
       ],
       "use" : "0.12.6",
       "npm" : {
